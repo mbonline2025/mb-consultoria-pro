@@ -80,6 +80,25 @@
 
 @media (max-width: 720px) {
   .topbar nav a { font-size: 14px; }
+  .menu-toggle {
+    display: grid;
+    place-content: center;
+    gap: 5px;
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    border: 1px solid rgba(255,255,255,.35);
+    border-radius: 50%;
+    background: rgba(255,255,255,.04);
+  }
+  .menu-toggle i { display: block; width: 19px; height: 2px; border: 0; border-radius: 99px; background: #fff; transition: transform .2s ease, opacity .2s ease; }
+  .menu-toggle.active i:first-child { transform: translateY(7px) rotate(45deg); }
+  .menu-toggle.active i:nth-child(2) { opacity: 0; }
+  .menu-toggle.active i:last-child { transform: translateY(-7px) rotate(-45deg); margin-top: 0; }
+  .hero { height: auto; min-height: 0; padding-bottom: 32px; }
+  .hero h1 { font-size: 32px; line-height: 1.08; }
+  .hero h1 br { display: none; }
+  .hero .actions { margin-top: 16px; }
   .intro, .challenge p, .section-head p, .contact p { font-size: 16px; }
   .solution-grid p, .program-grid p { font-size: 15px; }
   .solution-grid small { font-size: 11px; }
