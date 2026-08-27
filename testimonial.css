@@ -1,0 +1,48 @@
+.testimonial {
+  padding: 76px 0 68px;
+}
+
+.testimonial .section-head { align-items: flex-start; }
+.testimonial h2 { font-size: 43px; }
+.testimonial .section-head p { max-width: 500px; font-size: 16px; }
+
+.testimonial blockquote {
+  position: relative;
+  max-width: 880px;
+  margin: 52px auto 0;
+  padding: 0 74px 0 0;
+  color: #1d293a;
+  font-size: 29px;
+  font-weight: 400;
+  line-height: 1.28;
+}
+
+.testimonial blockquote > span::after { display: none; }
+.testimonial blockquote::after {
+  content: '”';
+  position: absolute;
+  top: -13px;
+  right: 15px;
+  color: var(--orange);
+  font-family: Arial, sans-serif;
+  font-size: 74px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.testimonial cite {
+  margin-top: 17px;
+  color: var(--ink);
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.45;
+}
+
+.testimonial cite small { font-size: 11px; }
+
+@media (max-width: 720px) {
+  .testimonial { padding: 58px 0; }
+  .testimonial h2 { font-size: 34px; }
+  .testimonial blockquote { margin-top: 34px; padding-right: 38px; font-size: 23px; line-height: 1.32; }
+  .testimonial blockquote::after { right: -3px; font-size: 52px; }
+}

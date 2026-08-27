@@ -1,0 +1,16 @@
+.topbar {
+  background: #fff;
+  box-shadow: 0 1px 0 rgba(7, 26, 50, .1);
+}
+
+.topbar .brand-logo { display: flex; align-items: center; }
+.topbar .brand-logo img { display: block; width: 168px; height: auto; }
+.topbar nav a { color: var(--ink); }
+.footer-logo { display: inline-flex; margin-bottom: 12px; }
+.footer-logo img { display: block; width: 128px; height: auto; }
+
+@media (max-width: 720px) {
+  .topbar .brand-logo img { width: 140px; }
+  .menu-toggle i { border-color: var(--ink); }
+  .topbar nav.open { background: #fff; box-shadow: 0 10px 22px rgba(7, 26, 50, .12); }
+}

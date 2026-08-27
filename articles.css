@@ -1,0 +1,10 @@
+.article-grid .excerpt {
+  margin: 12px 0 16px;
+  color: #697382;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+@media (max-width: 720px) {
+  .article-grid .excerpt { font-size: 14px; }
+}
